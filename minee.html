@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopesphere - A World of Hope &amp; Happiness</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+            text-align: center;
+            transition: background-color 1s ease;
+        }
+
+        h1, h2, p {
+            font-family: 'Comic Sans MS', cursive;
+            color: #ff6347;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-top: 30px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            border-radius: 25px;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Mood Selector */
+        .mood-selector img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mood-selector img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Section Style */
+        .section {
+            padding: 40px;
+            margin-top: 30px;
+            background-color: #ffebcd;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.5s ease;
+        }
+
+        .section:hover {
+            background-color: #f0f8ff;
+        }
+
+        .section img {
+            width: 90%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            font-size: 1.2em;
+        }
+
+        /* Cute Themed Boxes */
+        .cute-box {
+            background-color: #fffacd;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Magical Effects */
+        .magical {
+            animation: sparkle 1.5s infinite alternate;
+        }
+
+        @keyframes sparkle {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Homepage: Welcome & Mood Selection -->
+    <div class="section" id="homepage">
+        <h1 class="magical">🌟 Welcome to Hopesphere 🌟</h1>
+        <p>Your journey of happiness begins here. Click an image to share your mood with us!</p>
+
+        <div class="mood-selector">
+            <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Happy" onclick="alert('We hope to make you smile!')">
+            <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Sad" onclick="alert('We’re here to help you feel better!')">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Neutral" onclick="alert('Let’s make today a beautiful day!')">
+        </div>
+
+        <button class="btn" onclick="window.location.href='#motivation'">Start Your Day with Happiness</button>
+    </div>
+
+    <!-- Section 1: Start Your Day with Happiness -->
+    <div class="section" id="motivation">
+        <h2 class="magical">🌞 Start Your Day with Happiness 🌞</h2>
+        <p class="cute-box">“Today is another day to start fresh, embrace life, and be your true self.”</p>
+        <img src="https://www.w3schools.com/w3images/snow.jpg" alt="Morning Sunshine">
+        <p>Enjoy some fun activities that will put a smile on your face!</p>
+        <button class="btn" onclick="window.location.href='#letters'">Letters from Someone Who Cares</button>
+    </div>
+
+    <!-- Section 2: Letters from Someone Who Cares -->
+    <div class="section" id="letters">
+        <h2 class="magical">💌 Letters from Someone Who Cares 💌</h2>
+        <div class="cute-box">
+            <p>“You are amazing, no matter what you’ve been through. Let the past go, and make today magical!”</p>
+        </div>
+        <div class="cute-box">
+            <p>“You matter. Don’t let anyone make you feel otherwise. Be kind to yourself.”</p>
+        </div>
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" alt="Letters of Love">
+        <p>We all need love and support. You are never alone!</p>
+        <button class="btn" onclick="window.location.href='#confidence'">Make Yourself Feel Confident &amp; Beautiful</button>
+    </div>
+
+    <!-- Section 3: Make Yourself Feel Confident & Beautiful -->
+    <div class="section" id="confidence">
+        <h2 class="magical">💖 Make Yourself Feel Confident &amp; Beautiful 💖</h2>
+        <p class="cute-box">“You are beautiful. No matter what you think, your worth is beyond measure.”</p>
+        <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Confidence Booster">
+        <p>Let go of doubts and embrace the amazing person you are!</p>
+        <button class="btn" onclick="window.location.href='#support'">You Are Not Alone</button>
+    </div>
+
+    <!-- Section 4: Anonymous Wall of Stories & Support -->
+    <div class="section" id="support">
+        <h2 class="magical">📝 You Are Not Alone 📝</h2>
+        <div class="cute-box">
+            <p>“No one can walk your journey for you, but we can walk together. Share your story and let’s grow stronger.”</p>
+        </div>
+        <img src="https://www.w3schools.com/w3images/forest.jpg" alt="Support Wall">
+        <p>We are here for each other. Here’s a space to share and find support.</p>
+        <button class="btn" onclick="window.location.href='#'">Start Over with Hope</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>🌸 Created with Love by V. Maharaja Mourya 🌸</p>
+    </div>
+
+</body></html>
